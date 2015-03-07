@@ -1,9 +1,19 @@
-for ( int j = k; j > 0; --j ) {
-    if ( array[j - 1] > array[j] ) {
-        std::swap( array[j - 1], array[j] );
-    } else {
-        // As soon as we don't need to swap, the (k + 1)st
-        // is in the correct location
-        break;
+template <typename Type>
+void insertion_sort( Type *const array, int const n ) {
+    
+    // This loop starts from the front to sort
+    for ( int k = 1; k < n; ++k ) {
+    
+    // This loop starts from next element of the previous sorted list 
+    // (in order to insert this element into an approriate location)
+        for ( int j = k; j > 0; --j ) {
+            if ( array[j - 1] > array[j] ) {
+                std::swap( array[j - 1], array[j] );
+            } else {
+                // As soon as we don't need to swap, the (k + 1)st
+               // is in the correct location
+               break;
+            }
+        }
     }
 }
