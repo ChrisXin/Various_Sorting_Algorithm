@@ -30,13 +30,14 @@ void insertion( Type *const array, int const n ) {
                 array[j] = array[j - 1];
             } else {
                  array[j] = tmp;
-                 goto finished;
+                 break;
             }
         }
 
-        array[0] = tmp;  // only executed if tmp < array[0]
-
-        finished: ;  // empty statement
+        if ( array[0] > tmp ) {
+            array[0] = tmp;  // only executed if tmp < array[0]
+        }
     }
 }
+
 
