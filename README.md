@@ -10,8 +10,14 @@ HeapSort:
 MergeSort:
          is faster but requires more memory
          
-QuickSort:
-        Use an object in the array (a pivot) to divide the two 
-        Average case:	Q(n ln(n)) time and Q(ln(n)) memory   
-        Worst case:	Q(n^2) time and Q(n) memory  (it happens when you pick the minimum element as pivot)
+QuickSort:  
+         - (On average faster than heap sort or merge sort)
+         - Using the median of three pivots is a reasonably means of finding the pivot
+         - Use a pivot in the array to divide the two sub array
+         - Average-case run-time:	Q(n ln(n)) time 
+         - Average-case Memory:        Q(ln(n)) memory 
+         - Worst-case run-time:	Q(n^2) time (it happens when you pick the minimum element as pivot)
+         - Worst-case Memory:          Q(n) memory  (it happens when you pick the minimum element as pivot)
+      
+
 
