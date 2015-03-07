@@ -2,13 +2,17 @@
 
 
 Insertion_Sort:
+         - Insert new entries into growing sorted lists
+         
          - worst-case runtime: Q(n^2)     (Reverse sorted)
          - Average-case runtime: O(d + n)
          - Best-case runtime: Q(n)    (Very few inversions:  d = O(n))
+         - Memory requirements:  Q(1)
 
 
 
 Q(n ln(n)) Sorting Algorithm:
+
 
 HeapSort:
          allows in-place sorting
@@ -17,7 +21,7 @@ MergeSort:
          is faster but requires more memory
          
 QuickSort:  
-         - (On average faster than heap sort or merge sort)
+         - On average faster than heap sort or merge sort
          - Using the median of three pivots is a reasonably means of finding the pivot
          - Use a pivot in the array to divide the two sub array
          - Average-case run-time:	Q(n ln(n)) time 
