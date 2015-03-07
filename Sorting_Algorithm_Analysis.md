@@ -2,6 +2,9 @@
 
 
 Insertion_Sort:
+         - worst-case runtime: Q(n^2)     (Reverse sorted)
+         - Average-case runtime: O(d + n)
+         - Best-case runtime: Q(n)    (Very few inversions:  d = O(n))
 
 
 
