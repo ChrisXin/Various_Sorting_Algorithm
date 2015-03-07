@@ -3,6 +3,8 @@ void quicksort( Type *array, int first, int last ) {
     if ( last - first <= N ) {
         insertion_sort( array, first, last );
     } else {
+        //Choose the median of the first, middle, and last entries in the list
+
         Type pivot = find_pivot( array, first, last );
         int low  =     find_next( pivot, array, first + 1 );
         int high = find_previous( pivot, array,  last - 2 );
