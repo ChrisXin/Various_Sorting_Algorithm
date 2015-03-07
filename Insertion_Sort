@@ -17,3 +17,26 @@ void insertion_sort( Type *const array, int const n ) {
         }
     }
 }
+
+
+// swapping is expensive: (temporarily assign the new entry)
+template <typename Type>
+void insertion( Type *const array, int const n ) {
+    for ( int k = 1; k < n; ++k ) {
+        Type tmp = array[k];
+
+        for ( int j = k; k > 0; --j ) {
+            if ( array[j - 1] > tmp ) {
+                array[j] = array[j - 1];
+            } else {
+                 array[j] = tmp;
+                 goto finished;
+            }
+        }
+
+        array[0] = tmp;  // only executed if tmp < array[0]
+
+        finished: ;  // empty statement
+    }
+}
+
