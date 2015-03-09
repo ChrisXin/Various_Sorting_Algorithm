@@ -1,0 +1,12 @@
+void merge_sort( Type *array, int first, int last ) {
+    if ( last - first <= N ) {
+        insertion_sort( array, first, last );
+    } else {
+        int midpoint = (first + last)/2;
+
+        merge_sort( array, first, midpoint );
+        merge_sort( array, midpoint, last );
+        merge( array, first, midpoint, last );
+    }
+}
+	
