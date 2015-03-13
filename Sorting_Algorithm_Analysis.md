@@ -30,6 +30,18 @@ QuickSort:
          - Average-case Memory:        Q(ln(n)) memory 
          - Worst-case run-time:	Q(n^2) time (it happens when you pick the minimum element as pivot)
          - Worst-case Memory:          Q(n) memory  (it happens when you pick the minimum element as pivot)
+         
+
+
+An algorithm which can sort arbitrary data must be W(n ln(n))
+
+Bucket Sort:   
+        - (consider n elements which range from 0 to m-1)
+        - we don’t have arbitrary data. The trick is that the items being sorted fall within a certain range
+        - Average-Case Memory:   Q(m) memory  (not in place) (because we need m bin)
+        - Average-Case Time: Q(n) time (By assuming that the data falls into a given range)
+
+         - 
       
 
 
