@@ -19,6 +19,7 @@ HeapSort:
 
 MergeSort:
          is faster but requires more memory
+         - Run-time: Q(nln(n)) (no Best Case and Worst Case)
          
 QuickSort:  
          - On average faster than heap sort or merge sort
