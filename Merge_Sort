@@ -1,12 +1,22 @@
+
+
+
+
+
 template <typename Type>
 void merge_sort( Type *array, int first, int last ) {
     if ( last - first <= N ) {
         insertion_sort( array, first, last );
     } else {
+    
+     // Divide an unsorted list into two equal or nearly equal sub lists,
         int midpoint = (first + last)/2;
 
+    // Sorts each of the sub lists by calling itself recursively
         merge_sort( array, first, midpoint );
         merge_sort( array, midpoint, last );
+        
+    // Merges the two sub lists together to form a sorted list
         merge( array, first, midpoint, last );
     }
 }
