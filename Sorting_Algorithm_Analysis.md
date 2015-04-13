@@ -18,7 +18,8 @@ HeapSort:
          allows in-place sorting
 
 MergeSort:
-         is faster but requires more memory
+         is faster but requires more memory(not in place)
+         ( We cannot merge two arrays in-place. This algorithm always required the allocation of a new array. Therefore, the                   memory requirements are also Q(n))
          - Run-time: Q(nln(n)) (no Best Case and Worst Case)
          - Memeory: Q(log(n))
          
