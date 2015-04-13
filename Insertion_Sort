@@ -33,10 +33,6 @@ void insertion( Type *const array, int const n ) {
                  break;
             }
         }
-
-        if ( array[0] > tmp ) {
-            array[0] = tmp;  // only executed if tmp < array[0]
-        }
     }
 }
 
