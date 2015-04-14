@@ -15,7 +15,11 @@ Q(n ln(n)) Sorting Algorithm:
 
 
 HeapSort:
-         allows in-place sorting
+         allows in-place sorting(It requires Q(1) additional memory)
+         Convert the unsorted list into a max-heap as complete array
+         Pop the top n times and place that object into the vacancy at the end
+         
+
 
 MergeSort:
          is faster but requires more memory(not in place)
