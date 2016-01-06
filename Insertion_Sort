@@ -1,3 +1,5 @@
+// import std
+
 template <typename Type>
 void insertion_sort( Type *const array, int const n ) {
     
@@ -8,8 +10,9 @@ void insertion_sort( Type *const array, int const n ) {
     // (in order to insert this element into an approriate location)
         for ( int j = k; j > 0; --j ) {
             if ( array[j - 1] > array[j] ) {
-                std::swap( array[j - 1], array[j] );
-            } else {
+                swap( array[j - 1], array[j] );
+            } 
+            else {
                 // As soon as we don't need to swap, the (k + 1)st
                // is in the correct location
                break;
